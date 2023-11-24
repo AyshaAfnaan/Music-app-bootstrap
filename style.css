@@ -1,0 +1,104 @@
+body {
+    background-image: ;
+}
+
+.jumbotron {
+    background-image: url(./image/images\ \(1\).jpg);
+    object-fit: cover;
+    font-family: 'Caveat', cursive;
+    height: 70vh;
+    background-size: 100% 100%;
+    animation: fade ease 2s;
+    animation-fill-mode: forwards;
+}
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTheGdOKWo6gOL6qA4j_EXzPyGMVQ7G8twKBQ&usqp=CAU);
+}
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    /* position: relative; */
+    /* text-align: center; */
+    cursor: default;
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    padding: 1em;
+    height: 15.00em;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: hidden;
+
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+
+.hovereffect:hover img {
+    background: darkblue;
+    opacity: .25;
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+}
+
+.hovereffect h2,
+.hovereffect p {
+    color: black;
+    text-align: start;
+    position: relative;
+    font-size: 25px;
+    padding: 10px;
+    margin: 0px;
+    display: inline-block;
+}
+
+.hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+}
+
+
+.hovereffect p {
+    color: #e3e8ea;
+    font-size: 1.4em;
+}
+
+
+
+.hovereffect h2,
+.hovereffect p {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
+    visibility: visible;
+}
+
+/*  */
+
+
+.hovereffect:hover .overlay,
+.hovereffect:hover h2,
+.hovereffect:hover p {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.hovereffect:hover h2,
+.hovereffect:hover p {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
